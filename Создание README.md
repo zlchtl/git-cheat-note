@@ -147,3 +147,31 @@ another line
 ```
 
 *Обратите внимание: вторая тройка тройных кавычек стоит на отдельной строке.*
+
+## Создание графиков
+
+Ссылки на туториал и онлайн редактор:
+
+* Live Editor: https://mermaid.live/
+
+* Tutorial: https://mermaid.js.org/ecosystem/tutorials.html
+
+Пример: Схема статусов файлов в git
+
+```
+graph TD;
+  A(modified)-->|git add|B(staged);
+  B-->|git commit|C(tracked);
+  D(untracked)-->|git add|B;
+  C-->|git push|F(GitHub);
+  C-->|изменения|A;
+```
+
+```mermaid
+graph TD;
+  A(modified)-->|git add|B(staged);
+  B-->|git commit|C(tracked);
+  D(untracked)-->|git add|B;
+  C-->|git push|F(GitHub);
+  C-->|изменения|A;
+```
